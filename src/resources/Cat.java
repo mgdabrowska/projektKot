@@ -47,7 +47,7 @@ public class Cat {
 	}
 
 	public static class CatDAO {
-		Cat cat = new Cat();
+		Cat cat3 = new Cat();
 		ArrayList<Cat> kitty;
 
 		static void addCat(Cat cat) {
