@@ -3,6 +3,15 @@
   <groupId>ProjektKot</groupId>
   <artifactId>ProjectCat</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Aplikacja kursu kobietydokodu.pl</name>
+  <url>http://kobietydokodu.pl</url>
+  <modules>
+    <module>koty-domain</module>
+    <module>kot-application</module>
+    <module>koty-webapp</module>
+  </modules>
+  <description>Aplikacja realizowana jako część praktyczna kursu na stronie kobietydokodu.pl</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
