@@ -46,13 +46,6 @@ public class Cat {
 		this.nameofMentor = nameofMentor;
 	}
 
-	public static class CatDAO {
-		Cat cat = new Cat();
-		ArrayList<Cat> kitty;
 
-		static void addCat(Cat cat) {
-
-		}
-	}
 
 }
