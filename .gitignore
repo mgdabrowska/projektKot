@@ -23,5 +23,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/koty-webapp/src/main/webapp/WEB-INF/web.xml
 /kot-application/dependency-reduced-pom.xml
