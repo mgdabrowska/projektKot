@@ -16,4 +16,18 @@ public class CatDAO {
 		System.out.print("Thanks, I add cat correctly");
 	}
 
+	public List<Cat> getCats(){
+		return kitty;
+	}
+
+	public Cat getCatById(int id){
+		if(id<kitty.size()){
+			return kitty.get(id);
+		}else{
+
+			return null;
+
+		}
+	}
+
 }
