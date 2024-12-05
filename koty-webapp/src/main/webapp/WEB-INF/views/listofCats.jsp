@@ -8,7 +8,7 @@
 		<title>List of cats</title>
 	</head>
 	<body>
-		<a href="<c:url value="add" />">Add cat</a><br />
+		<a href="<c:url value='/addCat' />">Add cat</a><br />
 		<table border="1">
 			<thead>
 				<tr>
@@ -17,10 +17,10 @@
 				</tr>
 			</thead>
 			<tbody>
-			<c:forEach var="cat" item="${cats}" varStatus = "status"
+			<c:forEach var="cat" items="${cats}" varStatus = "status"/>
 				<tr>
-					<td>${status.index}</td>
-					<td><a href="<c:url value="cat-${status.index}" />">${cat.name}</a></td>
+					<td></td>
+					<td><a href="<c:url value='/cat-${status.index}' />">${cat.name}</a></td>
 				</tr>
 				</c:forEach>
 			</tbody>

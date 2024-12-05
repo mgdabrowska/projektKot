@@ -1,6 +1,7 @@
 package pl.kobietydokodu.koty.controllers;
 
 
+import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.NotBlank;
@@ -15,6 +16,7 @@ public class CatDTO {
     private String dateofBirth;
 
     @NotNull
+    @DecimalMin("0.1")
     private Float weight;
 
     @NotBlank

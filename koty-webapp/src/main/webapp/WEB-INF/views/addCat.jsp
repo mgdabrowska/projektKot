@@ -10,25 +10,29 @@
 		<title>Add cat</title>
 	</head>
 	<body>
-    		<a href="lisofCats">Back to list of cats</a><br />
-    		<form: form  method="POST" modelAttribute = "catDAO">
+    		<a href="listofCats">Back to list of cats</a><br />
+    		<form:form  method="POST" modelAttribute = "catDto">
     			<table border="1">
     				<tbody>
     					<tr>
     						<th>Name</th>
-    						<td><form: input type="text" path="name" /><c:if test="${pageContext.request.method=='POST'}"><form:errors path="name" /></c:if></td>
+    						<td><form: input type="text" path="name" />
+    						<c:if test="${pageContext.request.method=='POST'}"><form:errors path="name" /></c:if></td>
     					</tr>
     					<tr>
     						<th>Date of birth</th>
-    						<td><form:input type="text" path="dateofBirth" /><c:if test="${pageContext.request.method=='POST'}"><form:errors path="dateofBirth" /></c:if></td>
+    						<td><form:input type="text" path="dateofBirth" />
+    						<c:if test="${pageContext.request.method=='POST'}"><form:errors path="dateofBirth" /></c:if></td>
     					</tr>
     					<tr>
     						<th>Weight</th>
-    						<td><form:input type="text" path="weight" /><c:if test="${pageContext.request.method=='POST'}"><form:errors path="weight" /></c:if></td>
+    						<td><form:input type="text" path="weight" />
+    						<c:if test="${pageContext.request.method=='POST'}"><form:errors path="weight" /></c:if></td>
     					</tr>
     					<tr>
     						<th>Name of cat owner</th>
-    						<td><form:input type="text" path="nameofOwner" /><c:if test="${pageContext.request.method=='POST'}"><form:errors path="nameofOwner" /></c:if></td>
+    						<td><form:input type="text" path="nameofOwner" />
+    						<c:if test="${pageContext.request.method=='POST'}"><form:errors path="nameofOwner" /></c:if></td>
     					</tr>
     					<tr>
     						<td colspan="2" align="right"><input type="submit" value="ADD!" /></td>
