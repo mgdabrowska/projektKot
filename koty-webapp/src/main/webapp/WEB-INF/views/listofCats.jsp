@@ -5,30 +5,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista Kotów</title>
+    <title>List of cats</title>
 </head>
+<a href="addCat">Back to add cat</a><br />
 <body>
-    <h1>Lista Kotów</h1>
+    <h1>List of Cats</h1>
 
     <c:if test="${not empty cats}">
         <table border="1">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Imię</th>
-                    <th>Waga</th>
-                    <th>Właściciel</th>
-                    <th>Data Urodzenia</th>
+                    <th>Name</th>
+                    <th>Weight</th>
+                    <th>Name of cat owner</th>
+                    <th>Date of birth</th>
                 </tr>
             </thead>
             <tbody>
                 <c:forEach var="cat" items="${cats}">
                     <tr>
-                        <td>*****</td>
+                      <td><a href="cat-${cat.id}">${cat.id}</a></td>
                         <td>${cat.name}</td>
                         <td>${cat.weight}</td>
                         <td>${cat.nameofMentor}</td>
-                        <td><fmt:formatDate value="${cat.dateBirth}" pattern="dd.MM.yyyy" /></td>
+                        <td><fmt:formatDate value="${cat.dateBirth}" pattern="yyyy.MM.dd" /></td>
                     </tr>
                 </c:forEach>
             </tbody>
@@ -36,7 +37,8 @@
     </c:if>
 
     <c:if test="${empty cats}">
-        <p>Brak kotów w bazie.</p>
+        <p>No cats in the base.</p>
     </c:if>
+
 </body>
 </html>

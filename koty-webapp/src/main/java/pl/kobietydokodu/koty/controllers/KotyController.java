@@ -22,14 +22,6 @@ public class KotyController {
 @Autowired
   CatDAO catDAO;
 
-
-    @RequestMapping("/glowny")
-    public String przykladModelu(Model model) {
-        model.addAttribute("message", " To jest jakaś super informacja");
-
-        return "glowny";
-    }
-
     @GetMapping ("/addCat")
     public String addCatForm(@ModelAttribute("catDto") CatDTO catDTO) {
         return "addCat";
@@ -39,11 +31,11 @@ public class KotyController {
 
         if (!result.hasErrors()) {
             Cat cat = new Cat();
-            SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+            SimpleDateFormat sdf = new SimpleDateFormat("YYYY.MM.dd");
             try {
                 cat.setDateBirth(sdf.parse(catDto.getDateofBirth()));
             } catch (ParseException e) {
-                result.rejectValue("dateofBirth", "invalid.date", "Invalid date format. Please use dd.MM.yyyy.");
+                result.rejectValue("dateofBirth", "invalid.date", "Invalid date format. Please use YYYY.MM.dd");
             }
             if (!result.hasErrors()) {
                 cat.setName(catDto.getName());

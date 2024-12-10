@@ -12,6 +12,7 @@ public class CatDAO {
 	List<Cat> kitty = new ArrayList<>();
 	
 	public void addCat (Cat cat) {
+		cat.setId(kitty.size());
 		kitty.add(cat);
 		System.out.print("Thanks, I add cat correctly");
 	}

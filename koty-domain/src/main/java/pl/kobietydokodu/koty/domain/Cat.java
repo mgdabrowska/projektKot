@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class Cat {
 
+	Integer id;
 	String name;
 	Date dateBirth;
 	Float weight;
@@ -46,6 +47,10 @@ public class Cat {
 		this.nameofMentor = nameofMentor;
 	}
 
-
-
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id){
+		this.id=id;
+	}
 }

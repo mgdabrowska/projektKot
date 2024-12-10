@@ -12,7 +12,7 @@ public class CatDTO {
     private String name;
 
     @NotBlank
-    @Pattern(regexp="^\\d{4}\\.(0[1-9]|1[0-2])\\.(0[1-9]|[12]\\d|3[01])$")
+    @Pattern(regexp="^\\d{4}\\.(0[1-9]|1[0-2])\\.(0[1-9]|[12]\\d|3[01])$" , message = "Invalid date format. Please use YYYY.MM.DD")
     private String dateofBirth;
 
     @NotNull

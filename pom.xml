@@ -11,20 +11,7 @@
     <module>kot-application</module>
     <module>koty-webapp</module>
   </modules>
-<!--  <dependencies>-->
-<!--    <dependency>-->
-<!--      <groupId>org.springframework</groupId>-->
-<!--      <artifactId>spring-webmvc</artifactId>-->
-<!--      <version>6.1.14</version>-->
-<!--      <scope>compile</scope>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>ProjektKot</groupId>-->
-<!--      <artifactId>koty-application</artifactId>-->
-<!--      <version>0.0.1-SNAPSHOT</version>-->
-<!--      <scope>compile</scope>-->
-<!--    </dependency>-->
-<!--  </dependencies>-->
+
   <description>Aplikacja realizowana jako część praktyczna kursu na stronie kobietydokodu.pl</description>
   <build>
     <sourceDirectory>src</sourceDirectory>

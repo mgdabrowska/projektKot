@@ -8,7 +8,7 @@
 		<title>Details cat</title>
 	</head>
 	<body>
-		<a href="list">Back to list of cats</a><br />
+		<a href="listofCats">Back to list of cats</a><br />
 		<table border="1">
 			<tbody>
 				<tr>
@@ -17,15 +17,15 @@
 				</tr>
 				<tr>
 					<th>Date of birth</th>
-					<td><fmt:formatDate pattern="dd.MM.yyyy" value="${cat.dateofBirth}" /></td>
+					<td><fmt:formatDate pattern="yyyy.MM.dd" value="${cat.dateBirth}" /></td>
 				</tr>
 				<tr>
 					<th>Weight</th>
-					<td><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value"${cat.weight}" /></td>
+					<td><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${cat.weight}" /></td>
 				</tr>
 				<tr>
 					<th>Name of cat owner</th>
-					<td>${cat.nameofOwner}</td>
+					<td>${cat.nameofMentor}</td>
 				</tr>
 			</tbody>
 		</table>
