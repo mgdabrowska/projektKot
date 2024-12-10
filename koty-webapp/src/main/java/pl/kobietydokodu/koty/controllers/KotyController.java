@@ -8,6 +8,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import pl.kobietydokodu.koty.CatDAO;
 import pl.kobietydokodu.koty.domain.Cat;
+import pl.kobietydokodu.koty.controllers.CatDTO;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.ParseException;
@@ -29,7 +30,11 @@ public class KotyController {
         return "glowny";
     }
 
-    @PostMapping("/addCat")
+    @GetMapping ("/addCat")
+    public String addCatForm(@ModelAttribute("catDto") CatDTO catDTO) {
+        return "addCat";
+    }
+    @PostMapping ("/addCat")
     public String addCat(@ModelAttribute("catDto") @Valid CatDTO catDto, BindingResult result) {
 
         if (!result.hasErrors()) {

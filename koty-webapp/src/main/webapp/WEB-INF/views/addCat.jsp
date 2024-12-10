@@ -16,8 +16,9 @@
     				<tbody>
     					<tr>
     						<th>Name</th>
-    						<td><form: input type="text" path="name" />
-    						<c:if test="${pageContext.request.method=='POST'}"><form:errors path="name" /></c:if></td>
+    						<td><form:input type="text" path="name" />
+    						<c:if test="${pageContext.request.method=='POST'}">
+    						<form:errors path="name" /></c:if></td>
     					</tr>
     					<tr>
     						<th>Date of birth</th>
