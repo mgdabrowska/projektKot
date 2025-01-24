@@ -12,6 +12,7 @@
     <module>koty-webapp</module>
   </modules>
 
+
   <description>Aplikacja realizowana jako część praktyczna kursu na stronie kobietydokodu.pl</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
